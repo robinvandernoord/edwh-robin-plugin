@@ -3,7 +3,7 @@ requires = ["hatchling"]
 build-backend = "hatchling.build"
 
 [project]
-name = "edwh-demo-plugin"
+name = "edwh-demo-tasks-plugin"
 dynamic = ["version"]
 description = 'Demo project with a plugin to be discovered from the edwh package'
 readme = "README.md"
@@ -27,9 +27,9 @@ classifiers = [
 dependencies = ['invoke']
 
 [project.urls]
-Documentation = "https://github.com/unknown/edwh-demo-plugin#readme"
-Issues = "https://github.com/unknown/edwh-demo-plugin/issues"
-Source = "https://github.com/unknown/edwh-demo-plugin"
+Documentation = "https://github.com/remcoboerma/edwh-demo-tasks-plugin#readme"
+Issues = "https://github.com/remcoboerma/edwh-demo-tasks-plugin/issues"
+Source = "https://github.com/remcoboerma/edwh-demo-tasks-plugin"
 
 # https://packaging.python.org/en/latest/guides/creating-and-discovering-plugins/#using-package-metadata
 [project.entry-points."edwh.tasks"]
