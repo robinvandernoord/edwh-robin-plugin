@@ -10,10 +10,24 @@
 - [Installation](#installation)
 - [License](#license)
 
+## USING THIS TEMPLATE REPOSITORY
+1. remove this markdown section;
+2. replace 'demo' in README.md, pyproject.toml and the name of the plugin in `src` to your actual plugin name;
+3. (add your actual plugin code of course);
+4. run `semantic-release publish`, `hatch build -c` and `hatch publish`.
+
 ## Installation
 
 ```console
 pip install edwh-demo-plugin
+```
+
+But probably you want to install the whole edwh package:
+
+```console
+pipx install edwh[demo]
+# or
+pipx install edwh[plugins,omgeving]
 ```
 
 ## License
