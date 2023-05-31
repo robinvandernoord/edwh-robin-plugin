@@ -2,6 +2,9 @@
 
 <!--next-version-placeholder-->
 
+## v0.1.1 (2023-05-31)
+
+
 ## v0.1.0 (2023-05-31)
 ### Feature
 * **demo:** Changed template so less has to be changed when copying repo ([`fad7a3c`](https://github.com/educationwarehouse/edwh-demo-tasks-plugin/commit/fad7a3c1a811b06f0004db9974d472edf0e42858))
