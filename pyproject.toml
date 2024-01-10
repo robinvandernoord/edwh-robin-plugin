@@ -9,7 +9,7 @@ description = 'Demo project with a plugin to be discovered from the edwh package
 readme = "README.md"
 requires-python = ">=3.10"
 license = "MIT"
-keywords = []
+keywords = ["edwh"]
 authors = [
   { name = "Remco Boerma", email = "remco.b@educationwarehouse.nl" },
   { name = "Robin van der Noord", email = "robin.vdn@educationwarehouse.nl" },
@@ -23,7 +23,7 @@ classifiers = [
   "Programming Language :: Python :: Implementation :: CPython",
   "Programming Language :: Python :: Implementation :: PyPy",
 ]
-dependencies = ['invoke']
+dependencies = ['edwh']
 
 [project.optional-dependencies]
 dev = [
