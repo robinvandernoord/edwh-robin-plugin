@@ -3,9 +3,9 @@ requires = ["hatchling"]
 build-backend = "hatchling.build"
 
 [project]
-name = "edwh-demo-plugin"
+name = "edwh-robin-plugin"
 dynamic = ["version"]
-description = 'Demo project with a plugin to be discovered from the edwh package'
+description = 'robin project with a plugin to be discovered from the edwh package'
 readme = "README.md"
 requires-python = ">=3.10"
 license = "MIT"
@@ -23,7 +23,17 @@ classifiers = [
     "Programming Language :: Python :: Implementation :: CPython",
     "Programming Language :: Python :: Implementation :: PyPy",
 ]
-dependencies = ['edwh']
+dependencies = [
+    'edwh',
+    'edwh-b2-plugin',
+    'edwh-bundler-plugin',
+    'edwh-files-plugin',
+    'edwh-multipass-plugin',
+    'edwh-pipcompile-plugin',
+    'edwh-restic-plugin',
+    'edwh-server-provisioning-plugin',
+    'edwh-uptime-plugin',
+]
 
 [project.optional-dependencies]
 dev = [
@@ -33,20 +43,20 @@ dev = [
 ]
 
 [project.urls]
-Documentation = "https://github.com/educationwarehouse/edwh-demo-tasks-plugin#readme"
-Issues = "https://github.com/educationwarehouse/edwh-demo-tasks-plugin/issues"
-Source = "https://github.com/educationwarehouse/edwh-demo-tasks-plugin"
+Documentation = "https://github.com/robinvandernoord/edwh-robin-plugin#readme"
+Issues = "https://github.com/robinvandernoord/edwh-robin-plugin/issues"
+Source = "https://github.com/robinvandernoord/edwh-robin-plugin"
 
 # https://packaging.python.org/en/latest/guides/creating-and-discovering-plugins/#using-package-metadata
 [project.entry-points."edwh.tasks"]
-demo = "edwh_demo_plugin.demo_plugin"
+robin = "edwh_robin_plugin.robin_plugin"
 
 [tool.hatch.version]
-path = "src/edwh_demo_plugin/__about__.py"
+path = "src/edwh_robin_plugin/__about__.py"
 
 [tool.semantic_release]
 branch = "master"
-version_variable = "src/edwh_demo_plugin/__about__.py:__version__"
+version_variable = "src/edwh_robin_plugin/__about__.py:__version__"
 change_log = "CHANGELOG.md"
 upload_to_repository = false
 upload_to_release = false
@@ -84,7 +94,7 @@ dependencies = [
     "ruff>=0.0.243",
 ]
 [tool.hatch.envs.lint.scripts]
-typing = "mypy --install-types --non-interactive {args:src/edwh_demo_plugin tests}"
+typing = "mypy --install-types --non-interactive {args:src/edwh_robin_plugin tests}"
 style = [
     "ruff {args:.}",
     "black --check --diff {args:.}",
@@ -138,7 +148,7 @@ unfixable = [
 ]
 
 [tool.ruff.isort]
-known-first-party = ["edwh_demo_plugin"]
+known-first-party = ["edwh_robin_plugin"]
 
 [tool.ruff.flake8-tidy-imports]
 ban-relative-imports = "all"
@@ -148,16 +158,16 @@ ban-relative-imports = "all"
 "tests/**/*" = ["PLR2004", "S101", "TID252"]
 
 [tool.coverage.run]
-source_pkgs = ["edwh_demo_plugin", "tests"]
+source_pkgs = ["edwh_robin_plugin", "tests"]
 branch = true
 parallel = true
 omit = [
-    "src/edwh_demo_plugin/__about__.py",
+    "src/edwh_robin_plugin/__about__.py",
 ]
 
 [tool.coverage.paths]
-edwh_demo_plugin = ["src/edwh_demo_plugin", "*/edwh-demo-plugin/src/edwh_demo_plugin"]
-tests = ["tests", "*/edwh-demo-plugin/tests"]
+edwh_robin_plugin = ["src/edwh_robin_plugin", "*/edwh-robin-plugin/src/edwh_robin_plugin"]
+tests = ["tests", "*/edwh-robin-plugin/tests"]
 
 [tool.coverage.report]
 exclude_lines = [
