@@ -2,6 +2,12 @@
 
 <!--next-version-placeholder-->
 
+## v0.2.1 (2025-03-07)
+
+### Fix
+
+* Include devdb plugin ([`5eb498b`](https://github.com/robinvandernoord/edwh-robin-plugin/commit/5eb498b17a342601ad7268c966e87c8a000cda31))
+
 ## v0.2.0 (2024-04-09)
 
 ### Feature
