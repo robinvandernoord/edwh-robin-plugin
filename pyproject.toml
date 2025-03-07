@@ -27,6 +27,7 @@ dependencies = [
     'edwh',
     'edwh-b2-plugin',
     'edwh-bundler-plugin',
+    'edwh-devdb-plugin',
     'edwh-files-plugin',
     'edwh-multipass-plugin',
     'edwh-pipcompile-plugin',
@@ -38,8 +39,8 @@ dependencies = [
 [project.optional-dependencies]
 dev = [
     "hatch",
-    # "python-semantic-release",
-    "black",
+    "python-semantic-release<8",
+    # "black",
 ]
 
 [project.urls]
