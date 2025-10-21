@@ -2,6 +2,12 @@
 
 <!--next-version-placeholder-->
 
+## v0.2.2 (2025-10-21)
+
+### Fix
+
+* Include 'git' as required plugin ([`f08b016`](https://github.com/robinvandernoord/edwh-robin-plugin/commit/f08b016fe473e5c06a6a99fd41d5fd973802963e))
+
 ## v0.2.1 (2025-03-07)
 
 ### Fix
